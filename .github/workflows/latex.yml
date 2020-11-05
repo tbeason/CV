@@ -5,6 +5,7 @@ on:
     paths:
     - 'tbeason-cv.tex'
     - 'tbeason-cv-fullhist.tex'
+    - 'tbeason-resume.tex'
 
 jobs:
   latex-job:
@@ -18,6 +19,7 @@ jobs:
           root_file: |
             tbeason-cv.tex
             tbeason-cv-fullhist.tex
+            tbeason-resume.tex
           post_compile: |
             cp *.pdf ./output          
       - name: Deploy
