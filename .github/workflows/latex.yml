@@ -4,8 +4,8 @@ on:
   push:
     paths:
     - 'tbeason-cv.tex'
-    - 'tbeason-cv-fullhist.tex'
-    - 'tbeason-resume.tex'
+    # - 'tbeason-cv-fullhist.tex'
+    # - 'tbeason-resume.tex'
 
 jobs:
   latex-job:
@@ -16,10 +16,7 @@ jobs:
       - name: build pdf 
         uses: xu-cheng/latex-action@v2        
         with:
-          root_file: |
-            tbeason-cv.tex
-            tbeason-cv-fullhist.tex
-            tbeason-resume.tex
+          root_file: tbeason-cv.tex
           post_compile: |
             cp *.pdf ./output          
       - name: Deploy
