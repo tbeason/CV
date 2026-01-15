@@ -4,12 +4,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 
 \usepackage{calc}
 \usepackage{comment}
 
-% Simpler bibsection for CV sections
 \makeatletter
 \newlength{\bibhang}
 \setlength{\bibhang}{1em}
@@ -28,11 +27,11 @@
 
 \reversemarginpar
 
-%% Use these lines for letter-sized paper - tighter margins for 1 page
+%% Tighter margins for 1 page
 \usepackage[paper=letterpaper,
-            marginparwidth=1.0in,
+            marginparwidth=0.9in,
             marginparsep=.05in,
-            margin=0.6in,
+            margin=0.5in,
             includemp]{geometry}
 
 \setlength{\parindent}{0in}
@@ -40,10 +39,9 @@
 \usepackage[shortlabels]{enumitem}
 
 \usepackage{fancyhdr,lastpage}
-\pagestyle{empty}  % No page numbers for 1-page resume
+\pagestyle{empty}
 \fancyhf{}\renewcommand{\headrulewidth}{0pt}
 
-% PDF bookmarks and hyperlinks
 \usepackage{color,hyperref}
 \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
 \hypersetup{colorlinks,breaklinks,
@@ -64,7 +62,7 @@
 
 \renewcommand{\section}[1]{\pagebreak[3]%
     \hyphenpenalty=10000%
-    \vspace{1.0\baselineskip}%
+    \vspace{0.8\baselineskip}%
     \phantomsection\addcontentsline{toc}{section}{#1}%
     \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\raggedright #1}}}%
     \vspace{-\baselineskip}\par}
@@ -113,74 +111,70 @@ Chicago, IL \hfill 480-735-9791 \\
 
 \section{Summary}
 
-Quantitative finance researcher with expertise in asset pricing, derivatives, and algorithmic trading. CFA Level II Candidate. Published in the \textit{Journal of Political Economy}. Skilled in large-scale data analysis and computational modeling using Julia, MATLAB, and high-performance computing.
+Quantitative finance researcher focused on empirical alpha/risk signals across equities and derivatives. Deep experience with \textbf{CRSP/Compustat, TAQ, and options data} spanning 20+ years. Strong statistical modeling and simulation background; comfortable at \textbf{monthly through intraday} horizons. Published in \textit{Journal of Political Economy}. \textbf{Passed CFA Level II (Nov 2025).}
 
 
-\section{Skills}
+\section{Core Skills}
 
-\textbf{Certifications:} CFA Level II Candidate (2026)
-
-\halfblankline
-
-\textbf{Technical:} Julia, MATLAB, SAS, git, LaTeX
+\textbf{Data:} CRSP/Compustat (full universe, 20+ yrs), TAQ (tick-level), CBOE/OptionMetrics (full surface); large-scale panel \& intraday datasets
 
 \halfblankline
 
-\textbf{Methods:} Options pricing, risk modeling, time series econometrics, Monte Carlo simulation
+\textbf{Markets:} Equities, index options, futures; risk premia, tail risk, volatility, term structure
 
 \halfblankline
 
-\textbf{Computing:} Big Data, High-Performance Computing (HPC), AI/ML applications
-
-
-\section{Education}
-
-\textbf{Ph.D., Finance} \hfill Arizona State University, 2021 \\
-Dissertation: Equity risk premia, derivatives pricing, macrofinance modeling
+\textbf{Methods:} Empirical asset pricing, time-series econometrics, Monte Carlo simulation, factor \& covariance modeling, execution/microstructure analytics
 
 \halfblankline
 
-\textbf{M.Sc., Quantitative Finance} \hfill Bradley University, 2015
-
-\halfblankline
-
-\textbf{B.Sc., Finance; B.Sc., Mathematics} \hfill Bradley University, 2014
+\textbf{Tools:} Julia, MATLAB, SAS, Git, LaTeX; HPC/parallel workflows (100K+ simulation paths)
 
 
 \section{Experience}
 
-\textbf{Quantitative Finance Researcher} \hfill Virginia Tech, 2021--Present
+\textbf{Virginia Tech --- Assistant Professor of Finance} \hfill 2021--Present
 \begin{innerlist}
-\item Conducted empirical research on equity risk premium using options data; published in the \textit{Journal of Political Economy}
-\item Analyzed institutional trading algorithms using large-scale transaction datasets
-\item Developed equilibrium asset pricing models with applications to derivatives and tail risk
-\item Built computational frameworks in Julia and MATLAB for solving complex financial models
+\item Led quantitative research agenda spanning \textbf{equity risk premia, tail risk, and derivatives-informed inference}; published in top economics journal
+\item Built reproducible research pipelines using \textbf{CRSP/Compustat} (20+ years, full universe), \textbf{TAQ} (tick-level, multi-year), and \textbf{options data} (full surface); implemented estimation, simulation, and robustness frameworks in Julia/MATLAB with HPC workflows
+\item Conducted empirical analysis of \textbf{institutional trading algorithms} using high-frequency data; developed diagnostics for execution quality and market impact patterns
+\item Ran large-scale Monte Carlo simulations (100K+ paths) with parallelized HPC job arrays; optimized runtime via vectorization
+\item Communicated results to technical audiences (NBER, Federal Reserve, conferences) and emphasized interpretability and decision relevance
 \end{innerlist}
 
 
 \section{Selected Research}
 
-\textbf{Dissecting the Equity Premium} (with D. Schreindorfer) --- \textit{Journal of Political Economy}, 2022
+\textbf{Dissecting the Equity Premium} --- \textit{Journal of Political Economy}, 2022
 \begin{innerlist}
-\item Decomposed equity premium using novel options-based methodology
-\item Quantified return contributions across different market states
+\item Options- and state-dependent decomposition of equity risk premia; clarifies role of tail risk in expected returns
 \end{innerlist}
 
 \halfblankline
 
-\textbf{The Anatomy of Trading Algorithms} (with S. Wahal) --- Working Paper
+\textbf{The Anatomy of Trading Algorithms} --- Working Paper
 \begin{innerlist}
-\item Analyzed algorithmic trading patterns using institutional order-level data
-\item Presented at NBER, EFA, FMA, and AQR
+\item Empirical study of algorithmic execution using institutional/high-frequency data; measurable signatures for execution quality and microstructure (presented at NBER, EFA, FMA, AQR)
 \end{innerlist}
 
 \halfblankline
 
 \textbf{Cash Flows in Equilibrium Asset Pricing Models} --- Working Paper
 \begin{innerlist}
-\item Developed methodology for modeling cash flows in macrofinance models
-\item Presented at Federal Reserve Bank of Chicago and Office of Financial Research
+\item Equilibrium framework linking cash-flow dynamics to pricing implications; computationally tractable and testable (presented at FRB Chicago, OFR)
 \end{innerlist}
+
+
+\section{Education}
+
+\textbf{Ph.D., Finance} --- Arizona State University, 2021 \\
+\textbf{M.S., Quantitative Finance} --- Bradley University, 2015 \\
+\textbf{B.S., Finance; B.S., Mathematics} --- Bradley University, 2014
+
+
+\section{Credential}
+
+\textbf{Passed CFA Level II} (November 2025)
 
 
 \end{document}
