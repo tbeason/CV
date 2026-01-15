@@ -4,7 +4,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[10pt]{article}
+\documentclass[11pt]{article}
 
 \usepackage{calc}
 \usepackage{comment}
@@ -27,11 +27,10 @@
 
 \reversemarginpar
 
-%% Tighter margins for 1 page
 \usepackage[paper=letterpaper,
-            marginparwidth=0.9in,
+            marginparwidth=1.0in,
             marginparsep=.05in,
-            margin=0.5in,
+            margin=0.6in,
             includemp]{geometry}
 
 \setlength{\parindent}{0in}
@@ -62,7 +61,7 @@
 
 \renewcommand{\section}[1]{\pagebreak[3]%
     \hyphenpenalty=10000%
-    \vspace{0.8\baselineskip}%
+    \vspace{1.0\baselineskip}%
     \phantomsection\addcontentsline{toc}{section}{#1}%
     \noindent\llap{\scshape\smash{\parbox[t]{\marginparwidth}{\raggedright #1}}}%
     \vspace{-\baselineskip}\par}
@@ -111,70 +110,60 @@ Chicago, IL \hfill 480-735-9791 \\
 
 \section{Summary}
 
-Quantitative finance researcher focused on empirical alpha/risk signals across equities and derivatives. Deep experience with \textbf{CRSP/Compustat, TAQ, and options data} spanning 20+ years. Strong statistical modeling and simulation background; comfortable at \textbf{monthly through intraday} horizons. Published in \textit{Journal of Political Economy}. \textbf{Passed CFA Level II (Nov 2025).}
+Quantitative finance researcher focused on empirical alpha/risk signals across equities and derivatives. Deep experience with CRSP/Compustat, TAQ, and options data spanning 20+ years. Strong statistical modeling and simulation background; comfortable at monthly through intraday horizons. Published in \textit{Journal of Political Economy}. Passed CFA Level II (Nov 2025).
 
 
 \section{Core Skills}
 
-\textbf{Data:} CRSP/Compustat (full universe, 20+ yrs), TAQ (tick-level), CBOE/OptionMetrics (full surface); large-scale panel \& intraday datasets
-
-\halfblankline
-
-\textbf{Markets:} Equities, index options, futures; risk premia, tail risk, volatility, term structure
-
-\halfblankline
-
-\textbf{Methods:} Empirical asset pricing, time-series econometrics, Monte Carlo simulation, factor \& covariance modeling, execution/microstructure analytics
-
-\halfblankline
-
-\textbf{Tools:} Julia, MATLAB, SAS, Git, LaTeX; HPC/parallel workflows (100K+ simulation paths)
+\textbf{Data:} CRSP/Compustat, TAQ, CBOE/OptionMetrics; large-scale panel \& intraday datasets \\
+\textbf{Markets:} Equities, index options, futures; risk premia, tail risk, volatility \\
+\textbf{Methods:} Empirical asset pricing, time-series econometrics, Monte Carlo, factor modeling \\
+\textbf{Tools:} Julia, MATLAB, SAS, Git, LaTeX; HPC/parallel workflows
 
 
 \section{Experience}
 
 \textbf{Virginia Tech --- Assistant Professor of Finance} \hfill 2021--Present
 \begin{innerlist}
-\item Led quantitative research agenda spanning \textbf{equity risk premia, tail risk, and derivatives-informed inference}; published in top economics journal
-\item Built reproducible research pipelines using \textbf{CRSP/Compustat} (20+ years, full universe), \textbf{TAQ} (tick-level, multi-year), and \textbf{options data} (full surface); implemented estimation, simulation, and robustness frameworks in Julia/MATLAB with HPC workflows
-\item Conducted empirical analysis of \textbf{institutional trading algorithms} using high-frequency data; developed diagnostics for execution quality and market impact patterns
-\item Ran large-scale Monte Carlo simulations (100K+ paths) with parallelized HPC job arrays; optimized runtime via vectorization
-\item Communicated results to technical audiences (NBER, Federal Reserve, conferences) and emphasized interpretability and decision relevance
+\item Led quantitative research on equity risk premia, tail risk, and derivatives-informed inference; published in top economics journal
+\item Built research pipelines using CRSP/Compustat, TAQ (tick-level), and options data (full surface); implemented estimation and simulation frameworks in Julia/MATLAB with HPC
+\item Conducted empirical analysis of institutional trading algorithms using high-frequency data; developed diagnostics for execution quality and market impact
+\item Communicated results to technical audiences (NBER, Federal Reserve, conferences)
 \end{innerlist}
 
 
-\section{Selected Research}
+\section{Research}
 
-\textbf{Dissecting the Equity Premium} --- \textit{Journal of Political Economy}, 2022
+\textbf{Dissecting the Equity Premium} (with D. Schreindorfer) --- \textit{Journal of Political Economy}, 2022
 \begin{innerlist}
-\item Options- and state-dependent decomposition of equity risk premia; clarifies role of tail risk in expected returns
+\item Options-based decomposition of equity risk premia; clarifies role of tail risk in expected returns
 \end{innerlist}
 
 \halfblankline
 
-\textbf{The Anatomy of Trading Algorithms} --- Working Paper
+\textbf{The Anatomy of Trading Algorithms} (with S. Wahal) --- Working Paper
 \begin{innerlist}
-\item Empirical study of algorithmic execution using institutional/high-frequency data; measurable signatures for execution quality and microstructure (presented at NBER, EFA, FMA, AQR)
+\item Empirical study of algorithmic execution using institutional/high-frequency data (presented at NBER, EFA, FMA, AQR)
 \end{innerlist}
 
 \halfblankline
 
 \textbf{Cash Flows in Equilibrium Asset Pricing Models} --- Working Paper
 \begin{innerlist}
-\item Equilibrium framework linking cash-flow dynamics to pricing implications; computationally tractable and testable (presented at FRB Chicago, OFR)
+\item Equilibrium framework linking cash-flow dynamics to pricing (presented at FRB Chicago, OFR)
 \end{innerlist}
 
 
 \section{Education}
 
-\textbf{Ph.D., Finance} --- Arizona State University, 2021 \\
-\textbf{M.S., Quantitative Finance} --- Bradley University, 2015 \\
-\textbf{B.S., Finance; B.S., Mathematics} --- Bradley University, 2014
+\textbf{Ph.D., Finance} \hfill Arizona State University, 2021 \\
+\textbf{M.S., Quantitative Finance} \hfill Bradley University, 2015 \\
+\textbf{B.S., Finance; B.S., Mathematics} \hfill Bradley University, 2014
 
 
 \section{Credential}
 
-\textbf{Passed CFA Level II} (November 2025)
+Passed CFA Level II (November 2025)
 
 
 \end{document}
