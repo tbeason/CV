@@ -1,26 +1,28 @@
 name: Latex Build
 
-on: 
+on:
   push:
     paths:
     - 'tbeason-cv.tex'
-    # - 'tbeason-cv-fullhist.tex'
-    # - 'tbeason-resume.tex'
+    - 'tbeason-resume.tex'
 
 jobs:
   latex-job:
     runs-on: ubuntu-latest
-    steps:      
+    steps:
       - name: download paper repo
-        uses: actions/checkout@v3
-      - name: build pdf 
-        uses: xu-cheng/latex-action@v2        
+        uses: actions/checkout@v4
+      - name: build pdfs
+        uses: xu-cheng/latex-action@v3
         with:
-          root_file: tbeason-cv.tex
+          root_file: |
+            tbeason-cv.tex
+            tbeason-resume.tex
           post_compile: |
-            cp *.pdf ./output          
+            mkdir -p ./output
+            cp *.pdf ./output
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
