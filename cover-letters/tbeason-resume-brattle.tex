@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%% Industry Resume - Tyler Beason %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper, margin=0.6in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{color,hyperref}
+\usepackage{parskip}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+% Colors
+\definecolor{darkblue}{rgb}{0.0,0.0,0.4}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\hypersetup{colorlinks,breaklinks,linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
+
+% Section formatting - bold with underline
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{6pt}
+
+% Compact lists
+\setlist[itemize]{leftmargin=1.5em, itemsep=2pt, parsep=0pt, topsep=0pt}
+
+% Commands
+\newcommand{\email}[1]{\href{mailto:#1}{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% Header
+\begin{center}
+{\LARGE \textbf{Tyler Beason, Ph.D.}} \\[6pt]
+Chicago metro, IL \quad $\bullet$ \quad 480-735-9791 \quad $\bullet$ \quad \email{tylerbeasonpublic@gmail.com} \quad $\bullet$ \quad \href{http://tbeason.com}{tbeason.com}
+\end{center}
+
+\vspace{-4pt}
+
+% Summary
+\section{Summary}
+Quantitative finance researcher focused on empirical alpha/risk signals across equities and derivatives. Deep experience with CRSP/Compustat, TAQ, and index options data; strong econometrics and Monte Carlo background; comfortable across monthly to intraday horizons. Published in the \textit{Journal of Political Economy}.
+
+Targeting applied economics and finance roles in consulting, research, or advisory settings. Chicago-based; relocation not required.
+
+% Skills
+\section{Core Skills}
+\begin{tabular}{@{} l l}
+\textbf{Data:} & CRSP/Compustat, TAQ, index options data; large-scale panel \& intraday datasets \\[2pt]
+\textbf{Markets:} & Equities, index options, futures; risk premia, tail risk, volatility \\[2pt]
+\textbf{Methods:} & Time-series econometrics, factor modeling, bootstrapping, regularization \& cross-validation  \\[2pt]
+\textbf{Tools:} & Julia, MATLAB, SAS, Git, LaTeX, HPC/parallel compute \\
+\end{tabular}
+
+% Experience
+\section{Experience}
+\textbf{Virginia Tech} \hfill 2021--Present \\
+\textit{Assistant Professor of Finance}
+\begin{itemize}
+\item Led quantitative research across equity risk premia, alpha signals/factor models, tail risk, and derivatives analytics; published in the \textit{Journal of Political Economy}
+\item Built reproducible research pipelines using CRSP/Compustat, TAQ (tick-level), and full-surface options data; implemented model optimization, estimation, backtesting, and Monte Carlo simulation frameworks
+\item Developed and validated empirical analytics spanning risk-neutral information extraction from option surfaces, execution-quality diagnostics, and market-impact measurement using high-frequency data
+\item Presented results to technical audiences (NBER; Federal Reserve System) and practitioner venues; consistently recognized for clear communication of quantitative concepts (strong teaching evaluations)
+\end{itemize}
+
+% Research
+\section{Selected Research}
+\textbf{Dissecting the Equity Premium} (with D. Schreindorfer) --- \textit{Journal of Political Economy}, 2022 \\
+Options-based decomposition of aggregate equity risk premia; clarifies role of tail risk in expected returns
+
+\textbf{The Anatomy of Trading Algorithms} (with S. Wahal) \\
+Empirical study of algorithmic equities order execution using institutional/high-frequency data
+
+\textbf{Is the Variance Risk Premium a `VRP' (Very Reliable Predictor)?} (with B. Paye \& A. Ermolov) \\
+Return forecast reliability hinges on variance measurement choices; economic restrictions improve performance
+
+\textbf{Elementary Sufficient Conditions for a Level Factor} \\
+Bounds the distance between the leading covariance eigenvector and a constant vector (equal-weight portfolio)
+
+% Education
+\section{Education}
+\textbf{Ph.D., Finance} --- Arizona State University, 2021 \\
+\textbf{M.S., Quantitative Finance} --- Bradley University, 2015 \\
+\textbf{B.S., Finance \& B.S., Mathematics} --- Bradley University, 2014
+
+% Credential
+\section{Certification}
+\textbf{CFA Program} --- Level II: Passed (Nov 2025)
+
+\end{document}
